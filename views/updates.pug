@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Update Dog
+  body
+    h1 Update Dog Information
+    form(action="/update-dog" method="POST")
+      div
+        label(for="name") Name:
+        input(type="text" id="name" name="name" required)
+      div
+        label(for="breed") Breed:
+        input(type="text" id="breed" name="breed" required)
+      div
+        label(for="color") Color:
+        input(type="text" id="color" name="color" required)
+      div
+        button(type="submit") Update Dog

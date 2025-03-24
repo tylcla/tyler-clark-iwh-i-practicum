@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Dogs List
+  body
+    h1 List of Dogs
+    ul
+      each dog in dogs
+        li
+          h2= dog.properties.name
+          p
+            | Breed: #{dog.properties.breed}
+            br
+            | Color: #{dog.properties.color}
+            br
+            | Created At: #{dog.createdAt}
+            br
+            | Last Modified: #{dog.properties.hs_lastmodifieddate}
