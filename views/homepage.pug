@@ -3,16 +3,21 @@ html
   head
     title Dogs List
   body
+    a(href="/update-dogs") Add to this table
     h1 List of Dogs
-    ul
-      each dog in dogs
-        li
-          h2= dog.properties.name
-          p
-            | Breed: #{dog.properties.breed}
-            br
-            | Color: #{dog.properties.color}
-            br
-            | Created At: #{dog.createdAt}
-            br
-            | Last Modified: #{dog.properties.hs_lastmodifieddate}
+    table
+      thead
+        tr
+          th Name
+          th Breed
+          th Color
+          th Created At
+          th Last Modified
+      tbody
+        each dog in dogs
+          tr
+            td= dog.properties.name
+            td= dog.properties.breed
+            td= dog.properties.color
+            td= dog.createdAt
+            td= dog.properties.hs_lastmodifieddate
