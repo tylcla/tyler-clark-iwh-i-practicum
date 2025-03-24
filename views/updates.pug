@@ -4,7 +4,7 @@ html
     title #{pageTitle}
   body
     h1 Create Dog
-    form(action="/update-dog" method="POST")
+    form(action="/update-dogs" method="POST")
       div
         label(for="name") Name:
         input(type="text" id="name" name="name" required)
@@ -15,6 +15,6 @@ html
         label(for="color") Color:
         input(type="text" id="color" name="color" required)
       div
-        button(type="submit") Update Dog
+        button(type="submit") Create Dog
     div
       a(href="/") Return to homepage
