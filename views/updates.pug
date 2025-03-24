@@ -1,9 +1,9 @@
 doctype html
 html
   head
-    title Update Dog
+    title #{pageTitle}
   body
-    h1 Update Dog Information
+    h1 Create Dog
     form(action="/update-dog" method="POST")
       div
         label(for="name") Name:
@@ -16,3 +16,5 @@ html
         input(type="text" id="color" name="color" required)
       div
         button(type="submit") Update Dog
+    div
+      a(href="/") Return to homepage
